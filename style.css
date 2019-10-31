@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  font-size: 16px;
+  text-align: center;
+}
+
+a {
+  color: #F72C25;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #77A2B9;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+
+
+
+
+/* HEADER SECTION*/
+header {
+  height: 36rem;
+  width: 100%;
+  background-image: url("https://www.tokkoro.com/picsup/5093096-anime-black-hair-brown-eyes-cap-earbuds-girl-glasses-original-anime-skateboard.png");
+  background-size: cover;
+  background-position: center;
+  padding-top: 1.5rem;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(254,208,61,0.3);
+  padding: 0.7rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 30%;
+  height: auto;
+}
+
+.logo h3 {
+  font-size: 1.3rem;
+  color: white;
+  padding-left: 0.5rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+header nav li{
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+
+.menu {
+  display: none;
+}
+
+/* MOBILE MENU*/
+@media only screen and (max-width:700px) {
+  header nav li {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  header {
+    padding-top: 0rem;
+    height: 20rem;
+  }
+  .logo h3 {
+    display: none;
+  }
+  .logo img {
+    width: 70%;
+    height: auto;
+  }
+  div.headtext {
+    position: relative;
+    top: 0rem;
+    margin-left: 0rem;
+  }
+  div.headtext h2 {
+    padding: 1rem;
+  }
+}
+
+/* HEAD TEXT*/
+.headtext {
+  background-color: pink;
+  font-size: 2rem;
+  position: absolute;
+  top: 15rem;
+  margin-left: 27rem;
+}
+
+.headtext h2 {
+  padding: 2rem;
+}
